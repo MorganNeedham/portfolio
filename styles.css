@@ -192,6 +192,55 @@ body {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
+/* CONTACT CARD */
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-card h2 {
+  margin-bottom: 16px;
+}
+
+.contact-intro {
+  max-width: 650px;
+  margin: 0 auto 36px;
+  color: #d8eaff;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 195, 255, 0.7);
+  background-color: rgba(0, 195, 255, 0.18);
+  box-shadow: 0 0 12px rgba(0, 195, 255, 0.25);
+  font-weight: 700;
+}
+
+.contact-links a:hover {
+  background-color: rgba(0, 195, 255, 0.35);
+  box-shadow: 0 0 18px rgba(0, 195, 255, 0.55);
+  transform: translateY(-2px);
+}
+
+.contact-links i {
+  font-size: 20px;
+}
+
 /* PROJECT + CONTACT BUTTON LINKS */
 
 .project-links,
@@ -279,6 +328,16 @@ body {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-links {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-links a {
+  width: 100%;
+  max-width: 260px;
+}
 
   .project-links,
   .contact-links {
